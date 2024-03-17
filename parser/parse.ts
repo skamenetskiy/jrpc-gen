@@ -1,5 +1,5 @@
 import {join} from "https://deno.land/std@0.212.0/path/join.ts";
-import {parse} from "yaml";
+import {parse} from "npm:yaml@2.4.1";
 import {Parsed} from "../types/Parsed.ts";
 
 export async function parseFile(inFile: string): Promise<Parsed> {

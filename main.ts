@@ -1,7 +1,7 @@
-import {generate} from "../generator/generate.ts";
-import {parseFile, parseDir} from "../parser/parse.ts";
-import {Parsed} from "../types/Parsed.ts";
-import {program} from "commander";
+import {generate} from "./generator/generate.ts";
+import {parseFile, parseDir} from "./parser/parse.ts";
+import {Parsed} from "./types/Parsed.ts";
+import {program} from "npm:commander@12.0.0";
 
 try {
   const options =program
