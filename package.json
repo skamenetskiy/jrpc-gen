@@ -1,0 +1,12 @@
+{
+  "name": "jrpc-gen",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "yaml": "^2.4.1",
+    "@skamentskiy/jrpc": "https://github.com/skamenetskiy/jrpc#v0.0.4"
+  },
+  "scripts": {
+    "build": "deno compile --allow-read --allow-write --output ./jrpc-gen src/cmd/main.ts",
+    "test": "./jrpc-gen --input ./spec --output ./spec/Service.ts"
+  }
+}

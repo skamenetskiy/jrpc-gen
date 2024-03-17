@@ -1,0 +1,17 @@
+service:
+  name: SubSampleService
+  methods:
+    sayHello:
+      request:
+        name: string
+        dob: Timestamp
+      response:
+        message: string
+  types:
+    Timestamp:
+      year: number
+      month: number
+      day: number
+      hours?: number
+      minutes?: number
+      seconds?: number
